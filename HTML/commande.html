@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" type="x-icon" href="../Images/logo1.webp">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Commande</title>
+        <link rel="stylesheet" href="../CSS/commande.css">
+        <link rel="stylesheet" href="../CSS/index.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <img class="logo" src="../Images/logo1.webp" alt="Logo">
+            </div>
+            <nav class="navig">
+                <ul class="menu">
+                    <li><a href="../HTML/index.html">Accueil</a></li>
+                    <li><a href="#">Nos Services</a>
+                        <ul class="sous">
+                            <li><a href="./taxi.html">Taxi</a></li>
+                            <li><a href="./voyage.html">Voyage</a></li>
+                            <li><a href="./deme.html">Démenagement</a></li>
+                            <li><a href="#">Livraison</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./commande.html"> Commander </a></li>
+                    <li><a href="./contact.html">Nous contacter</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="contact">
+            <div id="contact-titre">
+                <h1>Commander un véhicule </h1>
+            </div>
+            <form action="./index.html">
+                <section class="commande-haut">
+                    <div class="gauche">
+                        <div class="gauche">
+                            <input type="text" name="Nom" id="nom" placeholder=" ">
+                            <label for="nom">Nom</label>
+                        </div>
+                        <div class="gauche">
+                            <input type="text" name="Prénoms" id="prenom" placeholder=" ">
+                            <label for="prenom">Prénoms</label>
+                        </div>
+                        <div class="gauche">
+                            <input type="email" required name="email" id="email" placeholder=" ">
+                            <label for="emai">Email</label>
+                        </div>
+                        <div class="gauche">
+                            <label for="Civilite"> Civilité</label>
+                            <select name="Civilité" id="civilite">
+                                <option value=" " selected>--</option>
+                                <option value="Monsieur">Monsieur</option>
+                                <option value="Madame">Madame</option>
+                                <option value="Mademoiselle">Mademoiselle</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="droit">
+                        <div class="droit">
+                            <input type="text" name="adresse" placeholder=" ">
+                            <label for="adress">Adresse</label>
+                        </div>
+                        <div class="droit">
+                            <input type="text" name="ville" placeholder=" ">
+                            <label for="ville">Ville</label>
+                        </div>
+                        <div class="droit">
+                            <input type="tel" name="fixe" placeholder=" ">
+                            <label for="tel">Fixe</label>
+                        </div>
+                        <div class="droit">
+                            <input type="tel" name="mobile" placeholder=" ">
+                            <label for="tel">Mobile</label>
+                        </div>
+                    </div>
+                    
+                </section>
+
+                <section class="commandd-bas">
+                    <div class="bas">
+                        <label for="service">Type de Service</label>
+                        <select name="service" id="service">
+                            <option value=" " selected>--</option>
+                            <option value="taxi">Taxi</option>
+                            <option value="voyage">Voyage</option>
+                            <option value="déménagement">déménagement</option>
+                        </select>
+                    </div>
+                    <div class="bas">
+                            <input type="tex" name="destina" placeholder=" ">
+                            <label for="destina">Destination</label>
+                    </div>
+                    <div class="bas">
+                        <input type="submit" value="Valider">
+                    </div>
+                </section>
+            </form>
+        </section>
+        <footer>
+            <section>
+                <div id="copy">
+                    <div>
+                        <p> &copy;TDC Transport, tout droit réservé</p>
+                    </div>
+                    <div >
+                        <ul>
+                            <li><a href="./confidentialite.html">Confidentialité</a></li>
+                            <li><a href="./accessibilite.html">Accéssibilité</a></li>
+                            <li><a href="./securite.html">Sécurité</a></li>
+                            <li><a href="./condition.html">Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </footer>
+
+    </body>
+</html>
