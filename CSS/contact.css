@@ -1,0 +1,72 @@
+
+
+.contact {
+    margin: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Entrer {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 50px 0;
+}
+
+input, label {
+    transition: all .3s;
+}
+
+label {
+    transform: translate(10px, -15px);
+    cursor: text;
+    transform-origin: left top;
+    position: absolute;
+}
+
+input {
+    padding: 10px;
+    text-transform: uppercase;
+    border: none; 
+    outline:none; 
+    border-bottom: 2px solid grey;
+}
+
+input[type="email"] {
+    text-transform: lowercase;
+}
+
+.Envoyer input {
+    border: 0;
+    padding: 10px 30px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    color: rgb(1, 1, 1);
+    background-color: rgb(180, 180, 162);
+    border-radius: 20px;
+}
+
+.Envoyer input:hover, .Envoyer input:focus {
+    background-color: yellow;
+}
+
+.Envoyer {
+    text-align: right;
+}
+
+input::placeholder {
+    opacity: 0;
+}
+
+input:focus,
+input:not(:placeholder-shown) {
+    border-bottom: 2px solid yellow;
+}
+
+input:not(:placeholder-shown) ~ label,
+input:focus ~ label {
+    transform: translate(10px, -30px) scale(.8);
+
+}
+
+#contact-titre {
+    text-align: center;
+}
